@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+    <head>
+        <title My First Site></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+#navbar{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: pink;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+
+body{
+    /* background-image:url("assets/13.jpg"); */
+    background-color: white;
+    background-size: auto;
+    
+}
+
+
+.links{
+    padding: 5px;
+    margin: 5px;
+    float: left;
+   
+}
+
+.links a{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.links a:hover:not(.active){
+    
+    background-color: white;
+    color: palevioletred;
+
+}
+
+
+
+.aboutt{
+    margin: auto;
+    padding-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    min-width: 400px;
+    
+}
+
+section p{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color:salmon;
+}
+
+hr { 
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+form{
+    margin : 50px;
+    padding-top: 40px;
+}
+
+
+input[type=text], select ,textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color:pink;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color:#D3D3D3;
+    color: salmon;
+}
+
+.images img{
+    width: 200px;
+    margin: 35px;
+    height: 200px;
+    filter:drop-shadow(3px 3px 3px grey);
+}
+
+
+.images{
+    margin: 40px;
+}
+
+</style>
+    </head >
+    <body>
+        <header id="top" style="padding-top: 50px; font-size: 25px; color:salmon; font-family: 'Courier New', Courier, monospace;">
+            <marquee>
+                <img src="assets/pinkbow.png">
+                Welcome to my page
+                <img src="assets/pinkbow.png">
+            </marquee>
+        </header>
+        <nav id="navbar">
+                <div class="links">
+                <a href="#about">About</a>
+                <a href="#image">Image</a>
+                <a href="#contact">Contact</a>
+                <a href="#top">Home</a>
+                </div>
+        </nav>
+            <div class="bannerimage">
+                <img src="assets/tes1.png" style="width:100%; margin-top:20px;">
+            </div>
+
+            <section>
+
+                <!--About-->
+                <div class="aboutt" id="about" >
+                        <p>ABOUT</p>
+                        Beauty is a combination of qualities that give pleasure to the senses. It is an inborn instinct in human to appreciate beauty. Beauty both of nature and of human form have been a powerful attraction for men and women of all times and climes.
+                        <br><br>
+                         A beautiful object fills the heart with joy and delight. The soul gets stirred by the external view of beauty. Man has developed an eye for beauty right from the Stone Age. The earliest cave-paintings depicting animals and trees prove the caveman’s love for beauty. Artistic creations are man’s attempts to depict the joy created by beauty.
+                        A person may see a beautiful thing for a short duration but its memory lasts for a long time. Man cherishes the beautiful moments in life. The imagination helps to revive and relive the happy moments spent in the company of beautiful things. A colorful butterfly seen for five minutes gives instant delight for the same time, but if that scene is recaptured twenty, the joy becomes twenty fold.
+                        <br><br>
+                        Beauty is present every where like nature, literature, sculpture, architecture etc. Cement, stone, wood, brick all these things have no shape and beauty but when they are used artistically by the architect, they take the form a beautiful building. A number of historical building all over the world is a great world. Taj Mahal in India, Eiffel Tower in Paris, Opera House in Australia, The Great wall of China, are some of the buildings which are famous for their beauty.
+
+                        Spiritual beauty is something nobler and higher than physical beauty. It is related to the beauty of the spirit and the soul. Spiritual beauty touches or soul. The pleasure and joy, we derive from it is sublime. Spiritual beauty is accompanied by truth and goodness- Satyam Shivam Sundaram as expressed by sage. We find a similar view in Keats’ poem, when he says, ‘Beauty is truth, truth beauty’. Keats regards spiritual beauty as the source of true joy. Beauty according to Shelly is eternal. An object of nature may decay and man may die,   yet both survive in thought, for beauty never dies.
+                        <br>  
+                </div>
+            
+            <hr>
+
+            <!-- Contact-->
+
+           
+                 <div id="contact">  
+                    <form>
+                    <p>CONTACT</p>
+                      <label>First Name</label>
+                      <input type="text"  placeholder="Name">
+                  
+                      <label>Last Name</label>
+                      <input type="text"  placeholder="Last Name">
+
+                      <label>Email</label>
+                      <input type="email"  placeholder="Email">
+
+                      <label>Message</label>
+                     
+                      <textarea placeholder="Your Message.."></textarea>
+                  
+                      <label>Country</label>
+                      <select  name="country">
+                        <option value"Indonesia">Indonesia</option>
+                        <option value="australia">Australia</option>
+                        <option value="malaysia">Malaysia</option>
+                        <option value="china">China</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                    
+            <!-- Portfolio-->
+
+            <p>IMAGE COLLECTIONS</p>
+            <div class="images" id="image">
+                <img src="assets/image1.jpg">
+                <img src="assets/image2.jpg">
+                <img src="assets/image3.png">
+                <img src="assets/image4.jpg">
+            </div>
+            
+            </section>
+                
+         
+    </body>
+</html>
